@@ -15,8 +15,6 @@ export const AppRouter = () => {
 
     const dispatch = useDispatch();
 
-
-
     useEffect(() => {
         dispatch( startChecking() );
     }, [dispatch])

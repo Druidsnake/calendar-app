@@ -18,7 +18,7 @@ const fetchSinToken = async( endpoint, data, method = "GET" ) => {
 
 const fetchConToken = async (endpoint, data, method = "GET") => {
     const url = `${baseUrl}/${endpoint}`;
-    const token = localStorage.getItem('token') || '';
+    const token = localStorage.getItem('token');
 
     if (method === 'GET') {
         return await fetch(url, {
