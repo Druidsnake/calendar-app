@@ -63,7 +63,7 @@ export const startRegister = (name, email, password) => {
 export const startChecking = () => {
     return async (dispatch) => {
 
-        if (localStorage.getItem('token')){
+        if (!!localStorage.getItem('token')){
             const resp = await fetchConToken('auth/renew');
             const body = await resp.json();
 
